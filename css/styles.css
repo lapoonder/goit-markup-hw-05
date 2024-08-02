@@ -447,7 +447,8 @@ main {
   margin-right: 80px;
 }
 
-.social-media-header {
+.social-media-header,
+.title-footer-form {
   font-weight: 500;
   color: #fff;
   margin-bottom: 16px;
@@ -493,14 +494,7 @@ main {
   gap: 24px;
 }
 
-.footer-input-label {
-  width: 264px;
-  font-weight: 500;
-  color: #fff;
-}
-
 .subscribe-form-input {
-  margin-top: 16px;
   width: 264px;
   height: 40px;
   padding-left: 16px;

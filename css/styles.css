@@ -231,8 +231,7 @@ main {
   border-radius: 4px;
   padding: 16px 32px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .order-service-button:hover,
@@ -553,7 +552,8 @@ main {
 
   opacity: 0; /*Делает модальное окно не видимым, полностью прозрачным. Основное состояние до вызова модального окна*/
   pointer-events: none; /* Позволяет модальному окну игнорировать события мыши и клавиатуры. Можно взаимодействовать с основным контентом сайта */
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: rgba(46, 47, 66, 0.4);
 }
 
@@ -576,7 +576,7 @@ main {
   width: 408px;
   min-height: 584px;
   overflow-y: auto;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .href-close-modal {
@@ -664,9 +664,7 @@ main {
   border-color: #4d5ae5;
 }
 
-.input-modal-name-people,
-.input-modal-phone,
-.input-modal-mail {
+.input-modal-user-svg {
   position: absolute;
   top: 50%;
   left: 16px;
@@ -675,13 +673,7 @@ main {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.input-modal-mail {
-  left: 15px;
-}
-
-.input-modal-form:focus ~ .input-modal-name-people,
-.input-modal-form:focus ~ .input-modal-phone,
-.input-modal-form:focus ~ .input-modal-mail {
+.input-modal-form:focus ~ .input-modal-user-svg {
   fill: #4d5ae5;
 }
 
